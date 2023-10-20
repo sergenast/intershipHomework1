@@ -1,0 +1,42 @@
+/* Адаптив под 992 */
+@media screen and (min-width: 992px) and (max-width:1279px) {
+    .wrapper{
+        max-width: 992px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .left{
+        display: grid;
+        grid-template-columns: 38.7% 16.8% 1fr 30.7%;
+        grid-template-rows: 1fr 52.2%;
+        grid-template-areas: 
+        "info description description the-first-girl"
+        "info coffee brown-background the-first-girl";
+    }
+
+    .right{
+        display: grid;
+        grid-template-columns: 22% 22% 22.6% 39.44%;
+        grid-template-rows: 50% 1fr;
+        grid-template-areas: 
+        "room the-second-girl the-third-girl boy"
+        "room red-background red-background boy";
+    }
+
+    .room{
+        max-width:100%;
+    }
+
+    .the-second-girl{
+        width:100%;
+    }
+
+    .the-third-girl{
+        max-width:100%;
+    }
+
+    .boy{
+        width:100%;
+    }
+}

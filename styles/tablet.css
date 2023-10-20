@@ -1,0 +1,58 @@
+/* Адаптив под 768 */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper{
+        max-width: 768px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .left{
+        display: grid;
+        grid-template-columns: 55.7% 24.2% 20.1%;
+        grid-template-rows: 65.7% 1fr;
+        grid-template-areas: 
+        "info the-first-girl the-first-girl"
+        "description coffee brown-background";
+    }
+
+    .the-first-girl{
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+
+    .coffee{
+        width:100%;
+        max-width:100%;
+    }
+
+    .brown-background{
+        width:100%;
+        max-width:100%;
+    }
+
+    .right{
+        display: grid;
+        grid-template-columns: 25.4% 26.1% 1fr 30.5%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "the-second-girl the-third-girl red-background boy";
+    }
+
+    .the-second-girl{
+        width:100%;
+    }
+
+    .the-third-girl{
+        width:100%;   
+    }
+    
+    .room{        
+        display: none;
+    }
+
+    .boy{
+        width: 100%;
+    }
+}

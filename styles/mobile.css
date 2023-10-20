@@ -1,0 +1,74 @@
+/* Адаптив под мобилку */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .wrapper{
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+    .left{
+        display: grid;
+        grid-template-columns: 55% 1fr;
+        grid-template-rows: 32.8% 17.2% 32.8% 17.2%;
+        grid-template-areas: 
+        "info info"
+        "description description"
+        "the-first-girl the-first-girl"
+        "coffee brown-background";
+    }
+    .right{
+        display: grid;
+        grid-template-columns:  49.3% 50.7%;
+        grid-template-rows: 40% 1fr 34.3%;
+        grid-template-areas: 
+        "the-second-girl the-third-girl"
+        "room red-background"
+        "room boy";
+    }
+
+    .info{
+        padding-bottom: 12%;
+    }
+
+    .info__title{
+        font-family: Inter Medium;
+        font-weight: 600;
+        font-size: 53px;
+        padding-left: 17.1%;
+        padding-right: 14.1%;
+    }
+
+    .icons{
+        width: 40%;
+    }
+
+    .description{
+        grid-area: description;
+        background-color: #828282;
+        color: #F2F2F2;
+        padding-left: 13%;
+        padding-top: 20%;
+        padding-bottom: 7%;
+}
+
+    .the-first-girl{
+        width: 100%;
+    }
+
+    .the-second-girl{
+        width:100%;
+    }
+
+    .the-third-girl{
+        width:100%;
+    }
+
+    .room{
+        width:100%;
+    }
+
+    .boy{
+        width:100%;
+    }
+    
+}

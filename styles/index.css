@@ -1,0 +1,115 @@
+.wrapper{
+    max-width: 1280px;
+    max-height: 720px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.left{
+    display: grid;
+    grid-template-columns: 55.7% 24.1% 20.2%;
+    grid-template-rows: 65.7% 34.3%;
+    grid-template-areas: 
+    "info the-first-girl the-first-girl"
+    "description coffee brown-background";
+
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 49.3% 50.7%;
+    grid-template-rows: 40% 1fr 34.3%;
+    grid-template-areas: 
+    "the-second-girl the-third-girl"
+    "room red-background"
+    "room boy";
+}
+
+.info{
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info__title{
+    font-family: Inter Medium;
+    font-weight: 600;
+    font-size: 64px;
+    padding-left: 14.1%;
+    padding-right: 14.1%;
+}
+
+.icons{
+    display: flex;
+    width: 30%;
+    justify-content:space-between;
+}
+
+.the-first-girl{
+    grid-area: the-first-girl;
+}
+
+.the-second-girl{
+    grid-area: the-second-girl;
+}
+
+.the-third-girl{
+    grid-area: the-third-girl;
+}
+
+.description{
+    grid-area: description;
+    background-color: #828282;
+    color: #F2F2F2;
+    padding-left: 13%;
+    padding-top: 20%;
+}
+
+.description__text{
+    width: 90%;
+    height: 35,6%;
+    font-family: Inter Thin;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.coffee{
+    grid-area: coffee;
+}
+
+
+.brown-background{
+    grid-area: brown-background;
+    background-color: #A6806B;
+}
+
+.room{
+    grid-area: room;
+}
+
+.red-background{
+    grid-area: red-background;
+    background-color: #A61C1C;
+
+}
+
+.boy{
+    grid-area: boy;
+}
+
+/* Шрифты */
+
+@font-face {
+    font-family: "Inter Thin";
+    src: url("../assets/fonts/Inter-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Inter Medium";
+    src: url("../assets/fonts/Inter-Medium.ttf");
+}
+
+
+
